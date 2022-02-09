@@ -1,0 +1,117 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    // border: 1px solid magenta; //temp
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        background-color: $very-dark-blue__card;
+        width: 88%;
+        border-radius: 2rem;
+        padding: 2.5rem;
+
+        .img-wrapper {
+            position: relative;
+            cursor: pointer;
+
+            .hero {
+                width: 100%;
+                border-radius: 1rem;
+            }
+            .color-overlay {
+                background-color: $cyan;;
+                opacity: 0.5;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border-radius: 1rem;
+                display: none;
+            }
+            .view-icon {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                display: none;
+            }
+            &:hover {
+                .color-overlay, .view-icon {
+                    display: block;
+                }
+            }
+        }
+        .title {
+            color: $white;
+            font-size: 2.2rem;
+            margin-top: 2rem;
+            cursor: pointer;
+
+            &:hover {
+                color: $cyan;
+            }
+        }
+        .description {
+            color: $soft-blue;
+            font-size: 1.6rem;
+            line-height: 160%;
+            margin-top: 1.2rem;
+            font-weight: 300;
+        }
+        .price-block {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 1.6rem;
+
+            .price-block__wrapper {
+                display: flex;
+                align-items: center;
+                font-size: 1.5rem;
+                gap: 0.8rem;
+            }
+
+            .price {
+                color: $cyan;
+                font-weight: 600;
+            }
+
+            .time-frame {
+                color: $soft-blue;
+            }
+        }
+        .line {
+            width: 100%;
+            height: 2px;
+            background-color: $very-dark-blue__line;
+            margin-top: 1.6rem;
+        }
+        .avatar {
+            display: flex;
+            align-items: center;
+            color: $soft-blue;
+            gap: 1.6rem;
+            font-size: 1.5rem;
+            margin-top: 1.6rem;
+            cursor: pointer;
+
+            img {
+                width: 3rem;
+                border: 1px solid transparent;
+                border-radius: 50%;
+            }
+            span {
+                color: $white;
+            }
+
+            &:hover {
+                img {
+                    border: 1px solid $white;
+                }
+            }
+        }
+    }
+}

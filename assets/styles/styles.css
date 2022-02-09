@@ -1,0 +1,159 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #0d192b;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .card {
+  background-color: #14253d;
+  width: 88%;
+  border-radius: 2rem;
+  padding: 2.5rem;
+}
+
+.container .card .img-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.container .card .img-wrapper .hero {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.container .card .img-wrapper .color-overlay {
+  background-color: #00fff7;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 1rem;
+  display: none;
+}
+
+.container .card .img-wrapper .view-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+}
+
+.container .card .img-wrapper:hover .color-overlay, .container .card .img-wrapper:hover .view-icon {
+  display: block;
+}
+
+.container .card .title {
+  color: white;
+  font-size: 2.2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.container .card .title:hover {
+  color: #00fff7;
+}
+
+.container .card .description {
+  color: #8bacda;
+  font-size: 1.6rem;
+  line-height: 160%;
+  margin-top: 1.2rem;
+  font-weight: 300;
+}
+
+.container .card .price-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1.6rem;
+}
+
+.container .card .price-block .price-block__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  gap: 0.8rem;
+}
+
+.container .card .price-block .price {
+  color: #00fff7;
+  font-weight: 600;
+}
+
+.container .card .price-block .time-frame {
+  color: #8bacda;
+}
+
+.container .card .line {
+  width: 100%;
+  height: 2px;
+  background-color: #2f415b;
+  margin-top: 1.6rem;
+}
+
+.container .card .avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #8bacda;
+  gap: 1.6rem;
+  font-size: 1.5rem;
+  margin-top: 1.6rem;
+  cursor: pointer;
+}
+
+.container .card .avatar img {
+  width: 3rem;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+.container .card .avatar span {
+  color: white;
+}
+
+.container .card .avatar:hover img {
+  border: 1px solid white;
+}
+/*# sourceMappingURL=styles.css.map */
