@@ -33,6 +33,7 @@ body {
   width: 88%;
   border-radius: 2rem;
   padding: 2.5rem;
+  max-width: 35rem;
 }
 
 .container .card .img-wrapper {
@@ -155,5 +156,22 @@ body {
 
 .container .card .avatar:hover img {
   border: 1px solid white;
+}
+
+@media screen and (min-width: 1440px) {
+  .container .card .description {
+    margin-top: 1.8rem;
+    font-size: 1.81rem;
+    line-height: 180%;
+  }
+  .container .card .price-block {
+    margin-top: 2.5em;
+  }
+  .container .card .line {
+    margin-top: 2.5rem;
+  }
+  .container .card .avatar {
+    margin-top: 1.5rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
